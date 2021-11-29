@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <h1>Formulario de reserva de salas</h1>
+            <style>
+                table,
+                th{
+                    border: 2px solid black;
+                    border-style: none;
+                    text-align: left;
+                }
+                td{
+                    border: 2px solid black;
+                    border-style: none;
+                    text-align: left;
+                }
+            </style>
+    </head>
+
+    <body>
+        <table width="600">
+            <tr bordercolor=black height="5" align="left" bgcolor="9C9C9C">
+                <td><b>Tu nombre:*</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><b>Tu correo electrónico:*</b></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr bordercolor=black height="5" align="left" bgcolor="9C9C9C">
+                <td><b>Departamento:*</b></td>
+                <td>
+                    <select>
+                    <option>ventas</option>
+                    <option>Compras</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Tipo de sala que desea reservar:*</b></td>
+                <td>
+                    <input type="radio" id="opc11" name="grupo1" value="11" checked />
+                    <label for="opc11">Tipo A</label>
+                    <br>
+                     <input type="radio" id="opc12" name="grupo1" value="12" checked />
+                     <label for="opc12">Tipo B</label>
+                    <br>
+                    <input type="radio" id="opc13" name="grupo1" value="13" checked />
+                    <label for="opc13">Tipo C</label>
+                </td>
+            </tr>
+            <tr bordercolor=black height="5" align="left" bgcolor="9C9C9C">
+                <td><b>Requisitos extra</b></td>
+                <td>
+                    <label for="opc11">Caballete y Bolígrafos</label>
+                    <input type="checkbox" id="opc11" name="grupo1" value="11" checked />
+                    <br>
+                    <label for="opc12">Televisión</label>
+                    <input type="checkbox" id="opc12" name="grupo1" value="12" checked />
+                    <br> 
+                    <label for="opc13">Café, té y agua</label>
+                    <input type="checkbox" id="opc13" name="grupo1" value="13" checked />
+                </td>
+            </tr>
+            <tr>
+                <td><b>Fecha de la reserva:*</b></td>
+                <td><input type="date" name="trip-start" id="start"></td>
+            </tr>
+            <tr bordercolor=black height="5" align="left" bgcolor="9C9C9C">
+                <td><b>Hora de la reserva</b></td>
+                <td><input type="time" name="Hora" id="start"></td>
+            </tr>
+        </table>
+    </body>
+</html>
+     
